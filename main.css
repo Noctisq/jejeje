@@ -1,0 +1,185 @@
+:root {
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 4s;
+    --typewriterCharacters: 23;
+    --typewriterCharactersTwo: 26;
+    --typewriterCharactersThree: 21;
+    --typewriterCharactersFour: 21;
+    --typewriterCharactersFinal: 22;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+  }
+  
+  h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  
+  .messageOne::before,
+  .messageOne::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .messageOne::before {
+    background: var(--bg-color);
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  .messageOne::after {
+    width: 0.125em;
+    background: black;
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  .messageTwo::before,
+  .messageTwo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .messageTwo::before {
+    background: var(--bg-color);
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersTwo)) 1s forwards;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersTwo)) 1s forwards;
+  }
+  
+  .messageTwo::after {
+    width: 0.125em;
+    background: black;
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersTwo)) 1s forwards, blink 750ms steps(var(--typewriterCharactersTwo)) infinite;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersTwo)) 1s forwards, blink 750ms steps(var(--typewriterCharactersTwo)) infinite;
+  }
+  .messageThree::before,
+  .messageThree::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .messageThree::before {
+    background: var(--bg-color);
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersThree)) 1s forwards;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersThree)) 1s forwards;
+  }
+  
+  .messageThree::after {
+    width: 0.125em;
+    background: black;
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersThree)) 1s forwards, blink 750ms steps(var(--typewriterCharactersThree)) infinite;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersThree)) 1s forwards, blink 750ms steps(var(--typewriterCharactersThree)) infinite;
+  }
+
+  .messagePreFinal::before,
+  .messagePreFinal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .messagePreFinal::before {
+    background: var(--bg-color);
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFour)) 1s forwards;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFour)) 1s forwards;
+  }
+  
+  .messagePreFinal::after {
+    width: 0.125em;
+    background: black;
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFour)) 1s forwards, blink 750ms steps(var(--typewriterCharactersFour)) infinite;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFour)) 1s forwards, blink 750ms steps(var(--typewriterCharactersFour)) infinite;
+  }
+
+  .messageFinal::before,
+  .messageFinal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .messageFinal::before {
+    background: var(--bg-color);
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFinal)) 1s forwards;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFinal)) 1s forwards;
+  }
+  
+  .messageFinal::after {
+    width: 0.125em;
+    background: black;
+    -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFinal)) 1s forwards, blink 750ms steps(var(--typewriterCharactersFinal)) infinite;
+            animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharactersFinal)) 1s forwards, blink 750ms steps(var(--typewriterCharactersFinal)) infinite;
+  }
+  @-webkit-keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @-webkit-keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  @-webkit-keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #yt-link {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  #yt-link:hover, #yt-link:focus {
+    color: teal;
+  }
